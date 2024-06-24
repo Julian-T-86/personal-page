@@ -1,0 +1,17 @@
+@media only screen and (max-width: 640px) {
+    
+header {
+    flex-direction: column;
+}
+
+#about {
+    border-left: none;
+    border-top: 3px solid white;
+    margin-top: 8%;
+}
+
+.image-container {
+    height: 240px;
+    width: auto;
+}
+}

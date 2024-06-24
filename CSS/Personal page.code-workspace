@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Coding course/Step 2 - Codecademy/Challenge Project Build a Website Design System"
+		},
+		{
+			"path": "../../Cheat Sheet"
+		},
+		{
+			"path": "../../../Coding course/Step 2 - Codecademy/Tea Cozy"
+		},
+		{
+			"path": "../../../Coding course/Step 2 - Codecademy/fotomatic_broken"
+		},
+		{
+			"path": "../../../Coding course/Step 2 - Codecademy/Challenge Project Company site"
+		},
+		{
+			"path": "../../../Coding course/Step 2 - Codecademy/Challenge Responsive Club Website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Challenge Responsive Club Website"
+	}
+}
