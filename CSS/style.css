@@ -11,35 +11,38 @@ header {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    
 }
 
 #about {
     margin-left: 30px;
-    border-left: 3px solid;
+    border-left: 4px solid;
     top: 0;
     padding: 10px;
     letter-spacing: 2px;
     text-shadow: 3px 3px 3px rgba(226, 220, 220, 0.891);
-    color: rgba(18, 13, 1, 0.866);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This will cover the area without stretching */
-    object-position: top; /* Align the top part of the image with the container */
-    border-radius: 50%;
+    object-fit: cover; /*This will cover the area without stretching */
+    position: absolute;
 }
 
-.image-container {    
-    width: 180px; /* Adjust as needed */
+.image-container {
+    width: 200px; /* Adjust as needed */
     height: 200px; /* Adjust as needed */
     overflow: hidden; /* This will hide the parts outside the container */
+    position: relative;
+    border-radius: 50%;
+    translate: 10px 0px;
 }
 
 a {
-    color: rgba(18, 13, 1, 0.866);
+    color: black;
     transition: color 1s, font-weight 1s, letter-spacing 1s, font-size 1s;
 }
 
@@ -47,7 +50,7 @@ a:hover {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bolder;
-    color: black;
+    color: rgb(159, 140, 222);
     font-size: larger;
     text-shadow: none;
 }
