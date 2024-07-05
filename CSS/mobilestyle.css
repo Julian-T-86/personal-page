@@ -17,4 +17,10 @@ header div{
     box-shadow: 0px 0px 55px 5px lightsalmon;
     box-sizing: border-box;
 }
+
+input, textarea {
+    width: 80%;
+    text-align: center;
+}
+
 }

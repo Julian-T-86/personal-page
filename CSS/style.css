@@ -79,7 +79,7 @@ a:hover {
     text-shadow: none;
 }
 
-#story {
+#story, form {
     border-radius: 10px;
     box-sizing: border-box;
     margin: 1%;
@@ -91,13 +91,43 @@ a:hover {
     width: 98%;
 }
 
-#story p {
+#story p, input, label, button, textarea, form h2 {
     padding: 5px 5px;
     margin: 5px 5px;
 }
 
-#story, #about {
+#story, #about, form {
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);    
+}
+
+form {
+    margin-top: 5rem;
+}
+
+form h2{
+    padding-bottom: 2rem;
+}
+
+input, textarea {
+    width: 50%;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 35px;
+    font-weight: 780;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 3px;
+    background-image: linear-gradient(to right, white, lightsalmon);
+    border: none;
+}
+
+button:active {
+    box-shadow: -3px -3px 3px;
+    background-image: linear-gradient(to right, black, lightsalmon);
+    color: white;
 }
