@@ -1,5 +1,5 @@
 html {
-    background-image: url(./media/earth.png);
+    background-image: url('../media/earth.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
