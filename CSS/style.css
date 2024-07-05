@@ -1,10 +1,12 @@
-html {
+body {
     background-image: url(../media/earth.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
     scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
 header {
@@ -79,14 +81,14 @@ a:hover {
 
 #story {
     border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
+    box-sizing: border-box;
+    margin: 1%;
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 35px 15px lightsalmon;
     height: auto;
-    width: 100vw;
+    width: 98%;
 }
 
 #story p {
@@ -98,5 +100,4 @@ a:hover {
     background-color: rgba(158, 163, 134, 0.1);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    
 }
