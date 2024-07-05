@@ -2,7 +2,9 @@ html {
     background-image: url(/media/earth.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -11,25 +13,45 @@ header {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    
+}
+
+header div {
+    display: inline-flex;
+
 }
 
 #about {
-    margin-left: 30px;
-    border-left: 4px solid;
+    margin: 0 0 0 2rem;
     top: 0;
-    padding: 10px;
-    letter-spacing: 2px;
+    padding: 0 0 0 1rem;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
     text-shadow: 3px 3px 3px rgba(226, 220, 220, 0.891);
     color: black;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 55px 5px lightsalmon;
+}
+
+#about * {
+    margin: 10px;
+    z-index: 100;
+}
+
+#about h3 a{
+    margin: 0;
+}
+#about h3 a i {
+    margin: 0;
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover; /*This will cover the area without stretching */
-    position: absolute;
+    position: fixed;
+    object-position: center;
 }
 
 .image-container {
@@ -53,4 +75,28 @@ a:hover {
     color: rgb(159, 140, 222);
     font-size: larger;
     text-shadow: none;
+}
+
+#story {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 35px 15px lightsalmon;
+    height: auto;
+    width: 100vw;
+}
+
+#story p {
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+#story, #about {
+    background-color: rgba(158, 163, 134, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    
 }
