@@ -38,7 +38,7 @@
     </section>
 
     <section id="email-me">
-        <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <form action="mailto:iulianturlica86@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
             <h2>Email me!</h2>
             <label for="contact-name">Name:</label><br>
             <input type="text" id="contact-name" name="Contact-Name" required><br><br>
@@ -47,14 +47,30 @@
             <label for="contact-message">Message:</label><br>
             <textarea id="contact-message" name="Contact-Message" rows="6" cols="20" required></textarea><br><br>
             <button type="submit">Send !</button>
-        </form>        
+        </form>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <div id="t-cozy-container" class="project">
+                <iframe src="https://julian-t-86.github.io/tea-cozy/" title="Home Page of a tea shop"></iframe>
+            </div>
+            <div id="cali-container" class="project">
+                <iframe src="https://julian-t-86.github.io/Calisthenics/" title="Home Page of a responsive calisthenics club"></iframe>
+            </div>
+            <div id="mill-container" class="project">
+                <iframe src="https://julian-t-86.github.io/milling/" title="Home Page of a milling workshop"></iframe>
+            </div>
+        </div>
+       
     </section>
 </main>
 
 <footer>
-    <div id="icon-container">
+    <div class="icon-container">
         <a href="#story"><img src="media/story.png" alt="Icon linking to story" height="30px"></a>
-        <a href=""><img src="media/projects.png" alt="Icon linking to projects" height="30px"></a>
+        <a href="#projects"><img src="media/projects.png" alt="Icon linking to projects" height="30px"></a>
         <a href="#email-me"><img src="media/email-me.png" alt="Icon linking to email form" height="30px"></a>
     </div>
 </footer>

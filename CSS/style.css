@@ -9,11 +9,11 @@ body {
     background-position: center;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -59,16 +59,16 @@ header div {
 }
 
 #story, form {
-    border-radius: 10px;
+    
     box-sizing: border-box;
-    margin: 1%;
+    
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 35px 15px lightsalmon;
     transition: box-shadow 1s ease;
     height: auto;
-    width: 98%;
+    width: 100%;
 }
 
 #story p, input, label, button, textarea, form h2 {
@@ -112,7 +112,43 @@ button:active {
     color: white;
 }
 
-footer {
+#projects h2 {
+    margin-top: 5rem;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#projects div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: scroll;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 55px 5px rgb(236, 232, 230);
+    transition: box-shadow 1.5s ease-in;
+}
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 250px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
     margin-top: 5rem;
     display: flex;
     justify-content: center;
@@ -120,16 +156,16 @@ footer {
     height: 5rem;
 }
 
-#icon-container {
+.icon-container {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
-#icon-container img {
-    transition: height 1s ease;
+.icon-container img {
+    transition: height 0.5s ease;
 }
 
-#icon-container img:active {
+.icon-container img:active {
     height: 50px;
 }
