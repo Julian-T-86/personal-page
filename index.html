@@ -16,13 +16,11 @@
     <div>
         <div class="image-container">
             <img src="media/PXL_20240621_131710275~2.jpg" alt="portrait of myself">
-    
         </div>
     
         <div id="about">
-            <h1>Iulian Țurlică</h1>
-            <h2>Full Stack Developer</h2>
-            <h3><a href="#story"><i>Here</i></a>'s my journey</h3>
+            <h1 id="name">Iulian Țurlică</h1>
+            <h2 id="expertise">Full Stack Developer</h2>
         </div>
     </div>
 </header>
@@ -38,21 +36,28 @@
             I enrolled in a full stack development course which made me fell in love with design.<br>It was mind boggling to me to see how, essentially from nothing, pieces of art could emerge.
         </p>
     </section>
+
     <section id="email-me">
         <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm">
             <h2>Email me!</h2>
             <label for="contact-name">Name:</label><br>
-            <input type="text" id="contact-name" name="Contact-Name"><br><br>
+            <input type="text" id="contact-name" name="Contact-Name" required><br><br>
             <label for="contact-email">Email:</label><br>
-            <input type="email" id="contact-email" name="Contact-Email"><br><br>
+            <input type="email" id="contact-email" name="Contact-Email" required><br><br>
             <label for="contact-message">Message:</label><br>
-            <textarea id="contact-message" name="Contact-Message" rows="6" cols="20"></textarea><br><br>
+            <textarea id="contact-message" name="Contact-Message" rows="6" cols="20" required></textarea><br><br>
             <button type="submit">Send !</button>
-        </form>
-        
+        </form>        
     </section>
-    
 </main>
+
+<footer>
+    <div id="icon-container">
+        <a href="#story"><img src="media/story.png" alt="Icon linking to story" height="30px"></a>
+        <a href=""><img src="media/projects.png" alt="Icon linking to projects" height="30px"></a>
+        <a href="#email-me"><img src="media/email-me.png" alt="Icon linking to email form" height="30px"></a>
+    </div>
+</footer>
 
 </body>
 </html>

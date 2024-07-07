@@ -25,10 +25,10 @@ header div {
 }
 
 #about {
+    box-sizing: border-box;
     margin: 0 0 0 2rem;
-    top: 0;
-    padding: 0 0 0 1rem;
-    letter-spacing: 5px;
+    padding: 0 1rem 0 1rem;
+    letter-spacing: 2px;
     font-size: 1.5rem;
     text-shadow: 3px 3px 3px rgba(226, 220, 220, 0.891);
     color: black;
@@ -37,18 +37,8 @@ header div {
     border-radius: 10px;
     box-shadow: 0px 0px 55px 5px lightsalmon;
     transition: box-shadow 1s ease;
-}
-
-#about * {
-    margin: 10px;
-    z-index: 100;
-}
-
-#about h3 a{
-    margin: 0;
-}
-#about h3 a i {
-    margin: 0;
+    max-height: 12.5rem;
+    width: auto;
 }
 
 .image-container img {
@@ -65,21 +55,7 @@ header div {
     overflow: hidden; /* This will hide the parts outside the container */
     position: relative;
     border-radius: 50%;
-    translate: 10px 0px;
-}
-
-a {
-    color: black;
-    transition: color 1s, font-weight 1s, letter-spacing 1s, font-size 1s;
-}
-
-a:hover {
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bolder;
-    color: rgb(159, 140, 222);
-    font-size: larger;
-    text-shadow: none;
+    translate: 0px 0px;
 }
 
 #story, form {
@@ -100,7 +76,7 @@ a:hover {
     margin: 5px 5px;
 }
 
-#story, #about, form {
+#story, #about, form, footer {
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);    
@@ -134,4 +110,26 @@ button:active {
     box-shadow: -3px -3px 3px;
     background-image: linear-gradient(to right, black, lightsalmon);
     color: white;
+}
+
+footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+#icon-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icon-container img {
+    transition: height 1s ease;
+}
+
+#icon-container img:active {
+    height: 50px;
 }
