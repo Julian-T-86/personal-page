@@ -15,7 +15,7 @@
             project[i].style.boxShadow = `0px 0px 35px 15px hsla(${hue},${saturation}%,50%,${alpha})`;
         }
 
-        setInterval(colorGenerator, 1500);
+        setInterval(colorGenerator, 2500);
     }
 
     colorGenerator();

@@ -3,7 +3,10 @@ html {
 }
 
 body {
-    background-image: url(../media/earth.png);
+    /* background-image: url(../media/earth.png); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);  
+    background: linear-gradient(90deg, rgb(237, 230, 230), rgb(110, 103, 103), rgb(29, 23, 23));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,6 +25,7 @@ header {
 
 header div {
     display: inline-flex;
+    zoom: 1.1;
 }
 
 #about {
@@ -55,13 +59,39 @@ header div {
     overflow: hidden; /* This will hide the parts outside the container */
     position: relative;
     border-radius: 50%;
-    translate: 0px 0px;
+    translate: 0px 0px;  
+}
+
+.arrow {
+  position: relative;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  position: absolute;
+  top: 74vh;
+  left: 20px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 #story, form {
-    
     box-sizing: border-box;
-    
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -82,36 +112,6 @@ header div {
     -webkit-backdrop-filter: blur(3px);    
 }
 
-form {
-    margin-top: 5rem;
-}
-
-form h2{
-    padding-bottom: 2rem;
-}
-
-input, textarea {
-    width: 50%;
-    box-shadow: 3px 3px 3px lightgray;
-}
-
-button {
-    width: 10rem;
-    height: 4rem;
-    border-radius: 35px;
-    font-weight: 780;
-    font-size: 1.5rem;
-    box-shadow: 3px 3px 3px;
-    background-image: linear-gradient(to right, white, lightsalmon);
-    border: none;
-}
-
-button:active {
-    box-shadow: -3px -3px 3px;
-    background-image: linear-gradient(to right, black, lightsalmon);
-    color: white;
-}
-
 #projects h2 {
     margin-top: 5rem;
     font-size: 3rem;
@@ -126,26 +126,61 @@ button:active {
 }
 
 .project {
-    position: relative;
-    width: 300px;
+    position: relative !important;
+    width: 300px !important;
     height: 250px;
-    overflow: scroll;
+    overflow: scroll !important;
     border-radius: 5px;
     margin: 0;
     margin-top: 3rem;
     box-shadow: 0px 0px 55px 5px rgb(236, 232, 230);
     transition: box-shadow 1.5s ease-in;
+    cursor: pointer;
 }
 
 iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 400px;
+    position: relative !important;
+    width: 500px !important; 
     height: 250px;
     border: none;
     margin: 0;
     padding: 0;
+    zoom: 2;
+    pointer-events: none!important;
+    overflow: scroll !important;
+    z-index: 10000;
+}
+
+form {
+    margin-top: 5rem;
+}
+
+form h2{
+    padding-bottom: 2rem;
+}
+
+input, textarea {
+    width: 50%;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+form button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 35px;
+    font-weight: 780;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 3px;
+    background: linear-gradient(to bottom, white, rgb(225, 208, 200),rgb(137, 128, 128), lightgray, white);
+    border: none;
+    transition: background-image 0.5s ease;
+}
+
+button:active {
+    box-shadow: -3px -3px 3px;
+    background: linear-gradient(to bottom, black,rgb(56, 55, 55), lightgray,lightgray,rgb(56, 55, 55), black);
+    color: black;
+    transition: background-image 0.5s ease;
 }
 
 footer{
@@ -159,7 +194,7 @@ footer{
 .icon-container {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon-container img {
